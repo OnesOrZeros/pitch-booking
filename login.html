@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="row clearfix">
+          <p class="logo">CHIPUKIZI</p>
+          <ul class="main-nav animated slideInDown" id="check-class">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="make_booking.html">MAKE A BOOKING</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="login.html">SIGN UP</a></li>
+          </ul>
+          <a href="#" class="mobile-icon" onclick="slideshow()"> <i class="fas fa-bars"></i> </a>
+        </div>
+      </nav>
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-button" onclick="login()">Log In</button>
+          <button type="button" class="toggle-button" onclick="register()">Register</button>
+        </div>
+        <form id="login" class="input-group" action="index.html" method="post">
+          <input type="text" class="input-field" placeholder="User Id" required>
+          <input type="text" class="input-field" placeholder="Enter Password" required>
+          <input type="checkbox" class="che-box"><span id="spa">Remember Password</span>
+          <button type="submit" class="submit-btn">Log In</button>
+        </form>
+        <form id="register" class="input-group" action="index.html" method="post">
+          <input type="text" class="input-field" placeholder="User Id" required>
+          <input type="email" class="input-field" placeholder="Enter Email" required>
+          <input type="text" class="input-field" placeholder="Enter Password" required>
+          <input type="checkbox" class="che-box"><span id="spa">I agree to the terms & conditions</span>
+          <button type="submit" class="submit-btn">Log In</button>
+        </form>
+      </div>
+    </header>
+    <script type="text/javascript">
+      function slideshow(){
+        var x = document.getElementById('check-class');
+        if(x.style.display === "none"){
+          x.style.display='block';
+        }else {
+          x.style.display='none';
+        }
+      }
+
+      var a = document.getElementById("login");
+      var b = document.getElementById("register");
+      var c = document.getElementById("btn");
+
+      function register(){
+        a.style.left = "-400px";
+        b.style.left = "50px";
+        c.style.left = "110px";
+      }
+      function login(){
+        a.style.left = "50px";
+        b.style.left = "450px";
+        c.style.left = "0";
+      }
+    </script>
+
+  </body>
+</html>

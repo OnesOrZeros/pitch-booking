@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Chipukizi</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+
+    <header>
+      <nav>
+        <div class="row clearfix">
+          <p class="logo">CHIPUKIZI</p>
+          <ul class="main-nav animated slideInDown" id="check-class">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="make_booking.html">MAKE A BOOKING</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="login.html">SIGN UP</a></li>
+          </ul>
+          <a href="#" class="mobile-icon" onclick="slideshow()"> <i class="fas fa-bars"></i> </a>
+        </div>
+      </nav>
+
+      <div class="main-content-header">
+        <h1>WELCOME TO <span class="colorchange">CHIPUKIZI</span>.<br>
+          HOME OF NUTURING YOUNG TALENT.</h1>
+          <a href="make_booking.html" class="btn btn-full">click to book</a>
+          <a href="about.html" class="btn btn-nav">show more</a>
+      </div>
+    </header>
+
+    <script type="text/javascript">
+      function slideshow(){
+        var x = document.getElementById('check-class');
+        if(x.style.display === "none"){
+          x.style.display='block';
+        }else {
+          x.style.display='none';
+        }
+      }
+    </script>
+  </body>
+</html>

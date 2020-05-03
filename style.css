@@ -1,0 +1,424 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 20px;
+  overflow-x: hidden;
+  color: white;
+  font-family: 'Flamenco', cursive;
+
+}
+
+header{
+  background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../TURF/images.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 150vh;
+}
+
+.clearfix:after{
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0px;
+  clear: both;
+}
+
+.row{
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.logo{
+  font-family: monospace;
+  font-size: 30pt;
+  color: #fff;
+  height: 120px;
+  width: auto;
+  float: left;
+  margin-top: 20px;
+}
+
+.main-nav{
+  float: right;
+  margin-top: 60px;
+}
+
+.main-nav li{
+  display: inline-block;
+  list-style: none;
+  margin-left: 40px;
+}
+
+.main-nav li a{
+  padding: 5px 0;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  font-weight: 100;
+}
+
+.main-nav li a:hover{
+  border-bottom: 2px solid #bf55ec;
+}
+.main-content-header{
+  width: 1180px;
+   position: absolute;
+   border: none;
+   top: 55%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+h1{
+  color: #fff;
+  font-size: 240%:
+  word-spacing: 5px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.btn{
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: lighter;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 200px;
+  transition: background-color 0.2s, border 0.2s, color 0.2;
+}
+
+.btn-full{
+  background-color: transparent;
+  color: #bf55ec;
+  margin-right: 15px;
+  border: 1px solid #bf55ec;
+}
+
+.btn-full:hover{
+  background-color: #fff;
+}
+
+.btn-nav{
+  background-color: transparent;
+  color: white;
+  border: 1px solid;
+}
+
+.btn-nav:hover{
+  background-color: #bf55ec;
+}
+
+.colorchange{
+  animation: colorchangechipukizi 1s infinite;
+}
+
+@keyframes colorchangechipukizi {
+  0%{color:red;}
+    25%{color: #bf55ec; ;}
+      50%{color: white;}
+        100%{color: #bf55ec;}
+}
+
+.mobile-icon{display: none;}
+
+
+/*log in form and styling*/
+/*background image styling*//*
+.hero{
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('../TURF/images.jpeg');
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}*/
+/*contains the controls*/
+.form-box{
+  width: 400px;
+  height: 480px;
+  position: relative;
+  margin: 2% auto;
+  background: #fff;
+  padding: 5px;
+  overflow: hidden;
+}
+/*encloses the login and register button*/
+.button-box{
+  width: 220px;
+  margin: 35px auto;
+  position: relative;
+  box-shadow: 0 0 20px 9px #bf55ec;
+  border-radius: 30px;
+}
+/*register button styling*/
+.toggle-button{
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+/*login button styling*/
+#btn{
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: linear-gradient(to right, #fff, #bf55ec);
+  border-radius: 30px;
+  transition: .5s;
+}
+/*input section styling(textfields)*/
+.input-group{
+  top: 180px;
+  position: absolute;
+  width: 280px;
+  transition: .5s;
+}
+.input-field{
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+}
+/*bottom login button*/
+.submit-btn{
+  width: 85%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: linear-gradient(to right, #fff, #bf55ec);
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+}
+
+.che-box{
+  margin: 30px 10px 30px 0;
+}
+/*checkbox caption*/
+#spa{
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  bottom: 68px;
+  position: absolute;
+}
+/*swapping of login and registration*/
+#login{
+  left: 50px;
+}
+
+#register{
+  left: 450px;
+}
+
+
+/*make_booking CSS part*/
+.pricing-table{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.col{
+  flex: 25%;
+  padding: 10px;
+  max-width: 320px;
+  box-sizing: border-box;
+}
+
+.table{
+  background: #fff;
+  padding: 40px 20px;
+  font-family: "montserrat",sans-serif;
+  color: black;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 10px #00000070;
+}
+
+.table h2{
+  text-transform: uppercase;
+}
+
+.table ul{
+  margin: 0;
+  padding: 0;
+}
+
+.table ul li{
+  padding: 10px 0;
+  list-style: none;
+}
+
+.price{
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.price span{
+  display: block;
+  font-size: 14px;
+}
+
+.table a{
+  text-decoration: none;
+  color: #bf55ec;
+  border: 2px solid #bf55ec;
+  display: block;
+  padding: 10px 0;
+  margin: 10px 0;
+  border-radius: 40px;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: 0.5s linear;
+}
+
+.table a:hover{
+  background: #bf55ec;
+  color: #fff;
+}
+
+.pop{
+  background: #bf55ec;
+  color: #fff;
+  font-size: 14px;
+  transform: rotate(45deg);
+  padding: 8px 30px;
+  position: absolute;
+  top: 10px;
+  right: -34px;
+}
+
+
+
+/*OUR SERVICES CSS*/
+.services-section{
+  overflow: hidden;
+  text-align: center;
+  padding: 60px;
+}
+
+.services-section h1{
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  color: white;
+  font-size: 40px;
+}
+
+.border{
+  display: block;
+  margin: auto;
+  width: 160px;
+  height: 3px;
+  background: #bf55ec;
+  margin-bottom: 40px;
+}
+
+.ds{
+  margin-bottom: 40px;
+}
+
+.ds a{
+  display: inline-block;
+  margin: 0 30px;
+  width: 160px;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.ds a img{
+  width: 100%;
+  filter: grayscale(100%);
+  transition: 0.5s all;
+}
+
+.ds a:hover > img{
+  filter: none;
+}
+
+.section{
+  width: 600px;
+  margin: auto;
+  font-size: 20px;
+  color: #fff;
+  text-align: justify;
+  height: 0;
+  overflow: hidden;
+}
+
+.section:target{
+  height: auto;
+}
+
+.name{
+  display: block;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 22px:
+}
+
+
+/*responsive queries*/
+@media only screen and (max-width: 1180px) {
+  .main-content-header{
+    width: 100%;
+    padding: 0 2%;
+  }
+}
+
+@media only screen and (max-width: 998px) {
+  h1{font-size: 200%;}
+}
+
+@media only screen and (max-width: 768px){
+  h1{font-size: 180%;}
+
+  .main-nav{display: none;}
+
+  .mobile-icon{ display: inline-block;
+    color: #fff;
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+
+  .main-nav{float: left;}
+
+  .main-nav li{
+    display: block;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .btn-full{
+    margin-bottom: 20px;
+  }
+
+  h1{font-size: 160%;}
+}
